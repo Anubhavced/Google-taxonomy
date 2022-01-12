@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import Onsubmit from './component/Onsubmit'
+import Dynamicinput from './component/Dynamicinput'
 import './App.css';
+import Codespliting from './component/Codespliting'
+import CalElectricityBill from './component/CalElectricityBill'
+import SetHierarchy from './component/SetHierarchy'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   {/* <Onsubmit /> */}
+   {/* <Dynamicinput /> */}
+   {/* <CalElectricityBill /> */}
+   <SetHierarchy />
+   {/* {console.log(Codespliting(16, 24))} */}
+   </>
   );
 }
 
