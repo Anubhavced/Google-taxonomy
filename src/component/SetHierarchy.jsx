@@ -1,3 +1,4 @@
+import { Button } from "@shopify/polaris";
 import { useEffect, useState } from "react";
 import data from "./data.txt";
 function SetHierarchy() {
@@ -52,14 +53,12 @@ function SetHierarchy() {
   });
   return (
     <>
-      <h1>Set Hierarchy</h1>
-      <button
-        onClick={() => {
+   <div>      
+     <h1>Google Taxonomy</h1>
+<Button primary onClick={() => {
           handleclick();
-        }}
-      >
-        Show
-      </button>
+        }}>Show</Button>
+      <br/>
       {show ? (
         <select
           onChange={(e) => {
@@ -205,6 +204,8 @@ function SetHierarchy() {
           </select>
         )
       ) : null}
+      </div>
+
     </>
   );
 }
